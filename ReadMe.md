@@ -1,8 +1,8 @@
 # MvvmCross JavaScript Bridge Plugin
 
-MvvmCross has a simple WebBrowser plugin that is great for just displaying a website.
+MvvmCross has a simple WebBrowser plugin that is great for displaying a simple website.
 
-But, in some cases, its neccesary to have more control over what happens in the browser. This project is an initial attempt to provide more platform support for these types of things.
+But, in some cases, its neccesary to have more control over what happens in the browser, and cross-platform support for the "Javascript Bridge". This project is an initial attempt to provide this support.
 
 Somethings you might want to do with the browser control:
 
@@ -14,7 +14,9 @@ Somethings you might want to do with the browser control:
 
 NOTE:
 * This is a work in progress... Any help would be appreciated, especially workflows not accounted for here.
-* Help providing support for iOS would be much appreciated.
+* The WPF code is in the best shape. 
+* The Android and WindowsPhone code needs work. 
+* Any help to provide support for iOS would be much appreciated.
 
 
 ## Code Example
@@ -172,3 +174,4 @@ In the code behind, View.xaml.cs, ,
 ## Todo:
 * Much of the code is application specific, so needs to be made more generic
 * The Javascript functions need to be improved: where they are located, naming, etc.
+* In WPF, if there are JS errors, there is an ugly popup displayed. The code disables the pop up right now. This may need to be a toggle, and we need to see if this is needed on other platforms.
