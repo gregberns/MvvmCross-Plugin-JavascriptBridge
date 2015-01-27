@@ -19,7 +19,7 @@ NOTE:
 * Any help to provide support for iOS would be much appreciated.
 
 
-## Code Example
+## Code Examples
 
 ### ViewModel Code
 
