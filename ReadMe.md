@@ -1,13 +1,13 @@
 # MvvmCross JavaScript Bridge Plugin
 
-MvvmCross has a simple WebBrowser plugin that is great for displaying a simple website.
+MvvmCross has a simple WebBrowser plugin that is great for displaying an external website.
 
-But, in some cases, its neccesary to have more control over what happens in the browser, and cross-platform support for the "Javascript Bridge". This project is an initial attempt to provide this support.
+But, in some cases, we'll need access to the "Javascript Bridge" or at least more control control over what happens in the browser. This project is an initial attempt to provide this support.
 
 Somethings you might want to do with the browser control:
 
 * Load an external web page
-* Load local HTML file, including page resources
+* Load local HTML file, including locally stored page resources
 * Execute Browser Javascript functions from the Application, and return 'messages' after function execution
 * Send 'messages' from the browser to the Application
 * Add error handling hooks within the browser, so the application can notify the user of website/browser issues
@@ -35,7 +35,6 @@ Simple example:
 			
 			//Load external page
 			browser.ShowWebPage("SomeURL", () => OnBrowserLoadCompleted());
-
         }
 
         private void OnBrowserLoadCompleted()
@@ -151,10 +150,6 @@ Locally loaded HTML Page, which can contain loacl resources(i.e. JS, CSS, img)
         {
         }
     }
-	
-
-
-
 
 
 ## Currently Available Functions:
@@ -176,11 +171,11 @@ Locally loaded HTML Page, which can contain loacl resources(i.e. JS, CSS, img)
   * Load a locally stored HTML file, and once the page has loaded call the suppled Action
   * This currently should work in WPF, but will need to be explored in other platforms
 
-* string AddErrorHandling(string htmldoc);
+* AddErrorHandling(string htmldoc) returns a String
   * Used only for locally opened HTML pages
   * Add some Javascript code to the browser so when its loaded, if there are errors, they can be captured. Once loaded, the errors can be retrieved.
         
-* List<string> GetErrors();
+* GetErrors() return a List of String
   * Retrieve any browser errors after load
 
 ## Todo:
