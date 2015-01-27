@@ -23,65 +23,38 @@ NOTE:
 
 ### ViewModel Code
 
-namespace MvvmCrossApp.Core.ViewModels
-{
-    public class MainViewModel : BaseViewModel
+Simple example: 
+
+	public class MainViewModel : BaseViewModel
     {
         public IMvxJavascriptBridge _browser;
-
-        public MainViewModel()
-        {
-        }
 
         public void NewWebBrowserContainer(IMvxJavascriptBridge bridge)
         {
             _browser = bridge;
+			
+			//Load external page
+			browser.ShowWebPage("SomeURL", () => OnBrowserLoadCompleted());
 
-			LoadExternalPage();
-			//Or
-			//LoadLocalPage();            
-        }
-
-        private void LoadExternalPage()
-        {
-            browser.ShowWebPage(context.Dashboard.Url, () => OnBrowserLoadCompleted());
-        }
-
-        private void LoadLocalPage()
-        {
-        	//Adding the 'base' element will allow you to access local files in WPF
-            HtmlFile = HtmlFile.Replace("<head>",
-                "<head><base href='file://C:\\IBE\\Deployed\\Dashboards\\1\\'>");
-
-			//Here you can add scripts to the page, before its loaded
-			//Use: If errors occur, you can collect them, then once loaded, the application can get them
-            
-            _browser.LoadLocalPage(HtmlFile, () => OnBrowserLoadCompleted());
         }
 
         private void OnBrowserLoadCompleted()
-        {
-            var script = @"function browserScript() { 
-                            if (window.external && 'Notify' in window.external) {
-                                window.external.Notify('func1','value');
-                            } else {
-                                alert('window.external.Notify doesnt exist'); 
-                            }}";
-			
+        {	
 			//Inject script into the browser
-            _browser.InjectScript(script);
+            _browser.InjectScript("SomeScript");
 			
-			//Addach a listener to recieve any responses from the browser
-            _browser.AttachListener((funcName, obj) => { });
+			//Attach a listener to recieve any responses from the browser
+            _browser.AttachListener((funcName, obj) => {
+				//Get callbacks here
+            });
 
 			//Invoke a specific browser script, a parameter array can also be passed in
-            _browser.InvokeScript("browserScript");
+            _browser.InvokeScript("SomeJSFunction", "arg1", "arg2");
 
             //Get the errors
             _browser.GetErrors();
         }
     }
-}
 
 
 ### Windows Phone 8
@@ -144,6 +117,52 @@ In the code behind, View.xaml.cs, ,
 	        }
 	    }
 	}
+
+### Other ViewModel Examples
+
+Locally loaded HTML Page, which can contain loacl resources(i.e. JS, CSS, img)
+
+    public class MainViewModel : BaseViewModel
+    {
+        ...
+
+        public void NewWebBrowserContainer(IMvxJavascriptBridge bridge)
+        {
+            _browser = bridge;
+			LoadLocalPage();            
+        }
+
+        private void LoadLocalPage()
+        {
+        	//This file would probably be retrieved from disk
+			var HtmlFile = "<html><head></head><body><h1>Hello World!</h1></body>"
+
+        	//Adding the 'base' element will allow you to access local files in WPF
+            HtmlFile = HtmlFile.Replace("<head>",
+                "<head><base href='file://C:\\IBE\\Deployed\\Dashboards\\1\\'>");
+
+			//Here you can add scripts to the page, before its loaded
+			//Use: If errors occur, you can collect them, then once loaded, the application can get them
+            
+            _browser.LoadLocalPage(HtmlFile, () => OnBrowserLoadCompleted());
+        }
+
+        private void OnBrowserLoadCompleted()
+        {
+        }
+    }
+	
+
+
+
+
+
+
+
+
+
+
+
 
 ## Currently Available Functions:
 
