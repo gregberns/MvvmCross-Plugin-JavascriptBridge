@@ -1,0 +1,14 @@
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.pdb
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\Cirrious.CrossCore.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\Cirrious.MvvmCross.Localization.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\obj\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\obj\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.pdb
+\\gbdev8\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.dll
+\\gbdev8\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.pdb
+\\gbdev8\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\Cirrious.CrossCore.dll
+\\gbdev8\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\bin\Debug\Cirrious.MvvmCross.Localization.dll
+\\gbdev8\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\obj\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.csprojResolveAssemblyReference.cache
+\\gbdev8\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\obj\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.dll
+\\gbdev8\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\obj\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.pdb
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge\obj\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.csprojResolveAssemblyReference.cache

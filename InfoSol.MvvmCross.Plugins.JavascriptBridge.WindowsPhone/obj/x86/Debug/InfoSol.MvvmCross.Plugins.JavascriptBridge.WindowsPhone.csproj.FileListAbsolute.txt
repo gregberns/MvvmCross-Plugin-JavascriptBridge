@@ -1,0 +1,8 @@
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\Bin\x86\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\Bin\x86\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone.pdb
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\Bin\x86\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\Bin\x86\Debug\Cirrious.CrossCore.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\Bin\x86\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.pdb
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\obj\x86\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\obj\x86\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone.dll
+C:\DEVn\MvvmCrossPOC\Plugins\InfoSol\JavascriptBridge\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone\obj\x86\Debug\InfoSol.MvvmCross.Plugins.JavascriptBridge.WindowsPhone.pdb
