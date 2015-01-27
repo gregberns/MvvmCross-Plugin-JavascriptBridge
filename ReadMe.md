@@ -157,38 +157,31 @@ Locally loaded HTML Page, which can contain loacl resources(i.e. JS, CSS, img)
 
 
 
-
-
-
-
-
-
-
 ## Currently Available Functions:
 
 * ShowWebPage(string url, Action onLoadCompleted)
-** Supply an external URL for browser to load. Supply a function to do something once the page has loaded
+  * Supply an external URL for browser to load. Supply a function to do something once the page has loaded
 
 * InjectScript(string script)
-** Inject Javascript into the browser. This can only occur after the page has loaded.
+  * Inject Javascript into the browser. This can only occur after the page has loaded.
 
 * InvokeScript(string functionName, params string[] args) - returns an object
-** Executes a script, with optional parameters, and returns a response.
-** The response may need to be a string, but could be a JSON string, that could then be convered to an object
+  * Executes a script, with optional parameters, and returns a response.
+  * The response may need to be a string, but could be a JSON string, that could then be convered to an object
 
 * AttachListener(Action<string, object> target)
-** The action supplied will be invoked anytime the browser executes a specific function 'window.external.Notify()'
+  * The action supplied will be invoked anytime the browser executes a specific function 'window.external.Notify()'
 
 * LoadLocalPage(string htmlPage, Action onLoadCompleted)
-** Load a locally stored HTML file, and once the page has loaded call the suppled Action
-** This currently should work in WPF, but will need to be explored in other platforms
+  * Load a locally stored HTML file, and once the page has loaded call the suppled Action
+  * This currently should work in WPF, but will need to be explored in other platforms
 
 * string AddErrorHandling(string htmldoc);
-** Used only for locally opened HTML pages
-** Add some Javascript code to the browser so when its loaded, if there are errors, they can be captured. Once loaded, the errors can be retrieved.
+  * Used only for locally opened HTML pages
+  * Add some Javascript code to the browser so when its loaded, if there are errors, they can be captured. Once loaded, the errors can be retrieved.
         
 * List<string> GetErrors();
-** Retrieve any browser errors after load
+  * Retrieve any browser errors after load
 
 ## Todo:
 * Much of the code is application specific, so needs to be made more generic
